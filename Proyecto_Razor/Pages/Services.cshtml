@@ -1,4 +1,22 @@
 ﻿@page
-@model Proyecto_Razor.Pages.ServicesModel
 @{
+    ViewData["Title"] = "Nuestros Servicios";
 }
+
+<div style="padding: 40px; max-width: 800px; margin: auto;">
+    <h1 style="text-align: center; color: #007bff;">Servicios que Ofrecemos</h1>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; width: 250px;">
+            <h3>Consultoría</h3>
+            <p>Asesoría y análisis personalizado para optimizar procesos y mejorar la eficiencia.</p>
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; width: 250px;">
+            <h3>Desarrollo de Software</h3>
+            <p>Desarrollamos soluciones a medida para satisfacer las necesidades específicas de nuestros clientes.</p>
+        </div>
+        <div style="border: 1px solid #ddd; border-radius: 5px; padding: 20px; width: 250px;">
+            <h3>Soporte Técnico</h3>
+            <p>Ofrecemos soporte 24/7 para asegurar el funcionamiento continuo de los sistemas de nuestros clientes.</p>
+        </div>
+    </div>
+</div>

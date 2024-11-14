@@ -1,4 +1,16 @@
 ﻿@page
-@model Proyecto_Razor.Pages.ContactModel
 @{
+    ViewData["Title"] = "Contáctanos";
 }
+
+<div style="padding: 40px; max-width: 600px; margin: auto;">
+    <h1 style="text-align: center; color: #007bff;">Ponte en Contacto</h1>
+    <p style="text-align: center; color: #555;">Estamos aquí para ayudarte. Completa el formulario a continuación y te responderemos lo antes posible.</p>
+
+    <form method="post" style="display: flex; flex-direction: column; gap: 15px;">
+        <input type="text" name="name" placeholder="Tu Nombre" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;">
+        <textarea name="message" rows="4" placeholder="Tu Mensaje" style="padding: 10px; border-radius: 5px; border: 1px solid #ddd;"></textarea>
+        <button type="submit" style="padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Enviar</button>
+    </form>
+</div>
